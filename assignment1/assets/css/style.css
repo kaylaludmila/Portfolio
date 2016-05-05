@@ -305,6 +305,7 @@ nav {
 
 	#logo {
 		width: 100%;
+		margin-left: 0px;
 	}
 
 	#masthead {
@@ -326,6 +327,7 @@ nav {
 		padding-bottom: 20px;
 		padding-top:15px;
 		float:none;
+		max-width: 640px;
 	}
 
 	.main-section {
