@@ -1,270 +1,353 @@
-* {
-  box-sizing: border-box;
-  color: #77777;
-  font-family: "Georgia", Times, 'Times New Roman', serif;
-}
-
-html {
-	width: 100%;
-}
-
 body {
+	background: url("https://raw.githubusercontent.com/the-Coding-Boot-Camp-at-UT-Austin/04-16-Class-Content/master/homework-solutions/week1-html-css-github/recommended-homework-solution/assets/images/concrete_seamless.png?token=ARYbwATranJ9gVuiZEiu8O7j4ICcJd7zks5XM-iywA%3D%3D");
+	font-size: 18px;
+	line-height: 34px;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	color: #777;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+/*general*/
+
+.container {
+	width: 100%;
+	max-width: 960px;
 	margin: 0 auto;
-	background-image: url("https://raw.githubusercontent.com/kaylaludmila/Basic-Portfolio/master/assets/images/pw_pattern_%402X.png");
-	font-family: "Arial", 'Helvetica Neue', Helvetica, sans-serif;
+	clear: both;
 }
-
-header {
-
-	background: #ffffff;
-	align:left;
-	font-size: 15px;
-	width: 100%;
-	float:left;
-	border-bottom-style: solid;
-    border-bottom-width: 2px;
-    border-bottom-color:#cccccc;
-    font-family: "Georgia", Times, 'Times New Roman', serif; 
-}
-}
-
-.middle {
-	width: 650px;
-	float:left;
-}
-
-.pagelinks {
-	padding: 0px;
-	margin-top: 30px;
-	float:right;
-	width:33%;
-	font-size: 10pt;
-	color:#777777;
-}
-
-a { 
-	text-decoration: none;
-	color:#777777;
- }
-
- a:hover {
- 	color:#4aaaa5;
- }
-
-.main-bio {
-	background: #ffffff;
-	padding: 20px;
-	float:left;
-	margin-top: 25px;
-	margin-left: 112px;
-	margin-bottom:25px;
-	width: 45%;
-	border-style: solid;
-    border-width: 1px;
-    border-color:#cccccc; 
-    position: relative;
-
-}
-
-h1 {
-	background: #4aaaa5;
-	padding: 20px;
-	padding-top: 20px;
-	margin-left: 112px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	color: #ffffff;
-	align:left;
-	font-size: 20px;
-	text-align: center;
-	height: 65px;
-	float:left;
-}
-
-.aboutme {	
-	margin-bottom: 20px;
-	margin-left: 0px;
-	color: #4aaaa5;
-	width:100%;
-	float: left;
-	border-bottom-style: solid;
-    border-bottom-width: 2px;
-    border-bottom-color:#cccccc;
-    font-family: "Georgia", Times, 'Times New Roman', serif;
-    font-size: 18pt; 
-}
-
-.profilepic {
-    width: 150px;
-    height: auto;
-    align-self: left;
-    float:left;
-    padding-right: 15px;
-}
-
+h1, 
+h2,
+h3,
 p {
-	font-size: 10pt;
-	line-height: 20pt;
-	color:#777777;
+	margin-bottom: 20px;
 }
-
-#connect {
-	background: #ffffff;
-	font-size: 10pt;
-	font-style: bold;
-	padding: 20px;
-	margin-bottom: 0px;
-	margin-top:95px;
-	margin-left: 20px;
+p:last-child {
+	margin-bottom: 0;
+}
+h1, h2, h3 {
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	font-weight: 700;
 	color: #4aaaa5;
-	float:right;
-	width: 15%;
-	position: absolute;
-	right:18%;
-	align-content: center;	
-	border-style: solid;
-    border-width: 1px;
-    border-color:#cccccc;
-    font-family: "Georgia", Times, 'Times New Roman', serif;
+}
+h1 {
+	font-size: 30px;
+	line-height: 49px;
+	border-bottom: 3px solid #ddd;
+	padding-bottom: 20px;
+}
+h2,
+h3 {
+	font-size: 22px;
 }
 
-.connecttitle {
+/*header*/
 
-	border-bottom-style: solid;
-    border-bottom-width: 2px;
-    border-bottom-color:#cccccc; 
-  	margin-bottom: 5px;
-  	padding-bottom: 10px;
-  	font-size: 12pt;
-}
-
-.github {
-	width: 25%;
-    height: auto;
-    float:left;
-    padding-right: 6px;
-}
-
-.linkedin {
-    width: 25%;
-    height: auto;
-    float:left;
-    padding-right: 6px;
-
-}
-
-.stack {
-    width: 25%;
-    height: auto;
-    float:left;
-    padding-right: 6px;
-}
-
-.contactinfo {
-	color:#777777;
-
-}
-
-.name {
+#masthead {
+	background: #fff;
+	margin: 0 0 30px;
+	z-index: 99;
+	color: #fff;
+	overflow: auto;
+	border-bottom: 2px solid #ccc;
+	position: fixed;
 	width: 100%;
-	height: 25px;
-	margin-bottom: 15px;
-	margin-top: 10px;
-	color:#777777;
-	font-family: "Arial", 'Helvetica Neue', Helvetica, sans-serif;
-	text-indent: 3px;
 }
-
-.email {
-	width: 100%;
-	height: 25px;
-	margin-bottom: 15px;
-	margin-top: 10px;
-	color:#777777;
-	font-family: "Arial", 'Helvetica Neue', Helvetica, sans-serif;
-	text-indent: 3px;
-}
-
-.message {
-	width: 100%;
-	height: 200px;
-	margin-bottom: 15px;
-	margin-top: 10px;
-	color:#777777;
-	font-family: "Arial", 'Helvetica Neue', Helvetica, sans-serif;
-	text-indent: 3px;
-	vertical-align: top;
+#logo {
+	width: 250px;
+	height: 90px;
+	background: #4aaaa5;
 	float: left;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	text-align: center;
+	line-height: 90px;
+	color: #fff;
+	font-weight: 700;
+	font-size: 30px;
+	text-decoration: none;
+}
+nav {
+	float: right;
+	margin-top: 25px;
+}
+nav a {
+	color: #999;
+	text-decoration: none;
+	margin-left: 15px;
+	display: inline-block;
+	border-left: 1px solid #efefef;
+	padding-left: 15px;
+	line-height: 18px;
+}
+nav a:first-child {
+	border-left: 0 none;
 }
 
-input[type=submit] {
-    padding:5px 15px; 
-    background:#4aaaa5;
-    color:#ffffff; 
-    display: block;
-    font-size: 12pt;
-    border:0 none;
-    cursor:pointer;
-}  
-
-.portfolio { 
-   position: relative; 
-   width: 100%;
-}
-
-.portfolioitem {
-	width: 45%;
-    float:left;
-    padding-bottom: 66px;
-    position: relative;
-    display: block;
-   	background-size: cover;
-   	margin:12px;
-}
-
-
-.hangman {
-	background-image: url("https://raw.githubusercontent.com/kaylaludmila/Basic-Portfolio/master/assets/images/hangman.jpg");
-}
-
-.rpg {
-	background-image: url("https://raw.githubusercontent.com/kaylaludmila/Basic-Portfolio/master/assets/images/RPG%20Game.jpg");
-}
-
-.trivia {
-	background-image: url("https://raw.githubusercontent.com/kaylaludmila/Basic-Portfolio/master/assets/images/Trivia%20Game.jpg");
-}
-
-
-.rutgers {
-	background-image: url("https://raw.githubusercontent.com/kaylaludmila/Basic-Portfolio/master/assets/images/Rutger%20info%20Widget.jpg");
-}
-
-
-.rock {
-	background-image: url("https://raw.githubusercontent.com/kaylaludmila/Basic-Portfolio/master/assets/images/Rock%20Paper%20Sissors.jpg");
-}
-
-
-h3 { 
-	background-color: #4aaaa5;
-  	color: #ffffff; 
-  	padding-top: 15px;
-  	padding-bottom: 15px;
-  	margin-top: 100px;
-  	text-align: center;
-}
+/*footer*/
 
 footer {
-
-	background: #666666;
-	color: #ffffff;
-	height: 12px;
-	clear:both;
-	font-size: 8pt;
+	background: #666;
+	color: #fff;
+	padding: 30px 0;
+	clear: both;
+	border-top: 8px solid #4aaaa5;
+	color: #ccc;
+	font-size: 12px;
 	text-align: center;
-	padding: 40px;
-	border-top: thick solid #4aaaa5;
-	border-width: 15px;
 }
 
+/*sidebar*/
+
+.sidebar {
+	background: #fff;
+	padding: 30px;
+	width: 100%;
+	max-width: 270px;
+	float: right;
+	border: 1px solid #ddd;
+	margin-bottom: 20px;
+}
+h3,
+.sidebar h2 {
+	border-bottom: 2px solid #eee;
+	padding-bottom: 20px;
+	margin-bottom: 15px;
+	line-height: 22px;
+}
+.social {
+	width: 62px;
+	height: 62px;
+	margin-top: 8px;
+	margin-right: 5px;
+}
+.social:last-child {
+	margin-right: 0;
+}
+
+/*main*/
+
+#main-container {
+	padding-top: 130px;
+}
+.main-section {
+	background: #fff;
+	padding: 30px;
+	margin: 0 0 40px 0;
+	width: 100%;
+	max-width: 650px;
+	float: left;
+	border: 1px solid #ddd;
+}
+
+/*portfolio page*/
+
+.work {
+	width: 274px;
+	overflow: auto;
+	position: relative;
+	float: left;
+	margin: 20px 0 25px;
+}
+.work:nth-child(even) {
+	margin-right: 40px;
+}
+.work img {
+	width: 100%;
+	border: 0 none;
+	opacity: .8;
+}
+.work h3 {
+	border-bottom: 0;
+	background: #4aaaa5;
+	color: #fff;
+	text-align: center;
+	position: absolute;
+	padding: 15px;
+	width: 100%;
+	bottom: 20px;
+	line-height: 30px;
+	margin-bottom: 0;
+	font-weight: 300;
+}
+.auth-image {
+	width: 200px;
+	height: auto;
+	margin-top: 10px;
+	float: left;
+	margin-right: 25px;
+}
+
+/*contact page*/
+
+#contact-form ul {
+	margin-bottom: 20px;
+}
+#contact-form li {
+	margin-bottom: 10px;
+}
+label,
+input[type=text],
+input[type=email],
+textarea {
+	display: block;
+	width: 100%;
+}
+input[type=text],
+input[type=email],
+textarea {
+	height: 35px;
+	border: 1px solid #ddd;
+	padding: 0 10px;
+	font-size: 14px;
+}
+textarea {
+	height: 200px;
+}
+input[type=submit] {
+	background: #4aaaa5;
+	border: 0 none;
+	color: #fff;
+	font-size: 18px;
+	padding: 10px 30px;
+	cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 980px) {
+
+
+	#masthead {
+		position:relative;
+	}
+
+#main-container {
+	padding-top: 15px;
+}
+	.main-container {
+		padding-bottom: 20px;
+		padding-top:15px;
+		float:none;
+	}
+#logo {
+	margin-left: 30px;
+}
+
+nav {
+	margin-right: 30px;
+}
+.main-section {
+	max-width: 500px;
+	margin-left: 30px;
+}
+	.sidebar{
+		width: 100%;
+		margin-right: 30px; 
+	}	
+	.auth-image{
+		width:100%;}
+}
+
+@media screen and (max-width: 768px) {
+
+
+	#logo {
+		width: 25%;
+	}
+
+	#masthead {
+		position:relative;
+	}
+
+	nav {
+		width: 40%;
+	}
+
+#main-container {
+	padding-top: 15px;
+}
+	.main-container {
+		padding-bottom: 20px;
+		padding-top:15px;
+		float:none;
+		max-width: 786px;
+	}
+
+	.main-section {
+		float:left;
+		max-width: 680px;
+		padding-bottom: 20px;
+	}
+	.sidebar{
+		float:right;
+		text-align: left;
+		position:relative;
+		max-width: 680px;
+		margin-right: 55px;
+	}	
+	.work{
+		float:left;
+		width: 40%;
+		text-align: center;
+	}
+		.auth-image{
+		width:25%;
+	}
+}
+
+@media only screen and (max-width: 640px) {
+
+	body {
+		margin: 0;
+	}
+
+	#logo {
+		width: 100%;
+	}
+
+	#masthead {
+		position:relative;
+	}
+
+	nav {
+		width: 100%;
+		position:relative;
+		text-align: center;
+		float:none;
+		margin-top: 0px;
+	}
+
+#main-container {
+	padding-top: 15px;
+}
+	.main-container {
+		padding-bottom: 20px;
+		padding-top:15px;
+		float:none;
+	}
+
+	.main-section {
+		float:none;
+		padding-bottom: 20px;
+		margin-right: 10px;
+		max-width: 580px;
+	}
+	.sidebar{
+		max-width: 580px;
+		float:none;
+		text-align: left;
+		position:relative;
+		margin-left: 29px;
+		margin-right: 29px;
+	}	
+	.auth-image{
+		width:100%;
+	}
+	.work{
+		float:none;
+		width: 100%;
+		text-align: center;
+	}
+}
